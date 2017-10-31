@@ -10,7 +10,7 @@ Requires Python 3.
 
 ### rugby_rankings package
 
-The main intended usage is for rugby_rankings/ as a package for other projects.
+The main intended usage is for rugby_rankings/ as a package for other projects..
 
 ### Command line interface
 
