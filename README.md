@@ -1,4 +1,4 @@
-## Rugby Rankings
+# Rugby Rankings
 
 Python library for calculating rugby ranking points.
 
@@ -8,7 +8,13 @@ This library is a Python version of [php rugby rankings](https://github.com/Rhod
 
 Requires Python 3.
 
-The main intended usage is for rugby_rankings/ as a package for other projects. However, a command line interface is also provided by rugby_rankings.py:
+### rugby_rankings package
+
+The main intended usage is for rugby_rankings/ as a package for other projects.
+
+### Command line interface
+
+A command line interface is also provided by rugby_rankings.py:
 ```bash
 $ python3 rugby_rankings.py --help
 usage: rugby_rankings.py [-h] [--neutral] [--world_cup] [--simple] [--verbose]
@@ -26,6 +32,27 @@ optional arguments:
   --world_cup  game is world cup game
   --simple     less verbose output
   --verbose    more verbose output
+```
+
+For example: if Wales were to beat England 30-3 at Twickenham ;-)
+```bash
+$ python3 rugby_rankings.py 90.14 81.73 3 33 --verbose
+Team A score:              03
+Team B score:              33
+World Cup game:            False
+Neutral Venue:             False
+Team A rating before game: 90.14
+Team B rating before game: 81.73
+Team A rating after game:  87.14
+Team B rating after game:  84.73
+Team A change:             -3.00
+Team B change:             +3.00
+```
+
+Adding a --simple flag will produce less verbose output, more suitable for piping to something else:
+```bash
+$ python3 rugby_rankings.py 90.14 81.73 3 33 --simple
+87.14,84.73
 ```
 
 ## Credits
