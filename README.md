@@ -6,6 +6,28 @@ This library is a Python version of [php rugby rankings](https://github.com/Rhod
 
 ## Usage
 
+Requires Python 3.
+
+The main intended usage is for rugby_rankings/ as a package for other projects. However, a command line interface is also provided by rugby_rankings.py:
+```bash
+$ python3 rugby_rankings.py --help
+usage: rugby_rankings.py [-h] [--neutral] [--world_cup] [--simple] [--verbose]
+                         rating_a rating_b score_a score_b
+
+positional arguments:
+  rating_a     the ranking points of team a
+  rating_b     the ranking points of team b
+  score_a      the score of team a
+  score_b      the score of team b
+
+optional arguments:
+  -h, --help   show this help message and exit
+  --neutral    game is played at neutral venue
+  --world_cup  game is world cup game
+  --simple     less verbose output
+  --verbose    more verbose output
+```
+
 ## Credits
 
 - [Rhodri Morris](https://github.com/RhodriM)
