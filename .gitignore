@@ -2,3 +2,5 @@
 .coverage
 .idea/*
 .DS_Store
+rugby_rankings/__pycache__/
+testss/__pycache__/
