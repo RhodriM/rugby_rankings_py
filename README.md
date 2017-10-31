@@ -55,6 +55,10 @@ $ python3 rugby_rankings.py 90.14 81.73 3 33 --simple
 87.14,84.73
 ```
 
+## Contributing
+
+See [Contributing Guide](CONTRIBUTING.md)
+
 ## Credits
 
 - [Rhodri Morris](https://github.com/RhodriM)
