@@ -42,8 +42,10 @@ if args.simple and not args.verbose:
           + ',' + '{0:.2f}'.format(r_output.get_team_b_rating())
          )
 else:
-    print('Team A rating after game:  ' + '\033[1;30m{0:.2f}'.format(r_output.get_team_a_rating()))
-    print('Team B rating after game:  ' + '\033[1;30m{0:.2f}'.format(r_output.get_team_b_rating()))
+    print('Team A rating after game:  '
+          + '\033[1;30m{0:.2f}'.format(r_output.get_team_a_rating()) + '\033[1;m')
+    print('Team B rating after game:  '
+          + '\033[1;30m{0:.2f}'.format(r_output.get_team_b_rating()) + '\033[1;m')
 
 if args.verbose and not args.simple:
     team_a_change = r_output.get_team_a_rating() - args.rating_a
