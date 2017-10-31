@@ -10,7 +10,26 @@ Requires Python 3.
 
 ### rugby_rankings package
 
-The main intended usage is for rugby_rankings/ as a package for other projects..
+The main intended usage is for rugby_rankings/ as a package for other projects. The main entry point for the packages is main.Main
+
+```python
+from rugby_rankings import ratings_input,main,ratings_output
+
+r_input = ratings_input.RatingsInput(
+    team_a_rating,
+    team_b_rating,
+    score_a,
+    score_b,
+    neutral_venue,
+    world_cup
+)
+r_main = main.Main(r_input)
+
+r_output = r_main.calculate()
+
+new_rating_a = r_output.get_team_a_rating()
+new_rating_b = r_output.get_team_b_rating()
+```
 
 ### Command line interface
 
